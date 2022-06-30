@@ -76,7 +76,3 @@ Parameters used
 <img src="images/ndt 1.png"/>
 <img src="images/ndt 2.png"/>
 
-### Aknowledges
-
-The hardest part for me was the parameters tuning, the final settings were suggested in part by the Udacity mentor's answers in the knowledge community.
-
