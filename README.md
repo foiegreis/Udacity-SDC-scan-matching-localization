@@ -1,7 +1,5 @@
 # Udacity-SDC-scan-matching-localization
-<<<<<<< HEAD
-Implementation Scan Matching localization with ICP and NDT algorithms, from the Udacity Self Driving Cars Nanodegree
-=======
+
 Implementation of Scan matching localization with ICP and NDT algorithms, from the Udacity Self Driving Cars Nanodegree
 
 The goal of scan matching is to find the relative pose (or transform) between the two robot positions where the scans were taken. The scans can be aligned based on the shapes of their overlapping features. For this purpose, we'll try two different and popular algorithms 
@@ -81,4 +79,4 @@ Parameters used
 ### Aknowledges
 
 The hardest part for me was the parameters tuning, the final settings were suggested in part by the Udacity mentor's answers in the knowledge community.
->>>>>>> d7d0e24 (Final commit)
+
