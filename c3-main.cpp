@@ -159,14 +159,14 @@ Eigen::Matrix4d NDT(PointCloudT::Ptr mapCloud, PointCloudT::Ptr source, Pose sta
     
     //Parameters ---------------------------------------------------------------
     // Setting minimum transformation difference for termination condition.
-    ndt.setTransformationEpsilon(1e-3); //1e-8); //1e-8); //0.000001);//.0001); 
+    ndt.setTransformationEpsilon(1e-3); //1e-8);
+  
   
     //Setting Resolution of NDT grid structure (VoxelGridCovariance).
-  
-    ndt.setResolution(5); //1.5); //2; //0.5); //1);
+    ndt.setResolution(5); //1.5); //2);
     
     // Setting max number of registration iterations.
-    int iterations = 100; //60; //50; //25; //15; //10; //6; //3;
+    int iterations = 100; //60; //50;
     // -------------------------------------------------------------------
   
     ndt.setInputTarget(mapCloud);
@@ -341,7 +341,7 @@ int main(int argc, char* argv[]){  //we now accept arguments when main is launch
 			//2. Set input cloud
 			vg.setInputCloud(scanCloud);
 			//3. Declare filter resolution
-			double filterRes = 1.0; //0.1 //0.5 //0.75 //1.0
+			double filterRes = 1.0; 
 			//4. Set leaf size of voxel grid
 			vg.setLeafSize(filterRes, filterRes, filterRes);
 			//5. Declare cloud filtered in the Heap
